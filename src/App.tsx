@@ -1,15 +1,14 @@
-import './App.scss'
-import Sidebar from './components/sidebar/Sidebar'
+import "./App.scss";
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
-
   return (
     <>
-      <div className='App'>
+      <div className="App">
         <Sidebar />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

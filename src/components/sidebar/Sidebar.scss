@@ -1,28 +1,90 @@
 .sidebar {
+  display: flex;
+  flex: 0.35;
+  height: 100vh;
+  &__left {
     display: flex;
-    flex: 0.35;
-    height: 100vh;
-    &__left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 7px 15px;
-        background-color: #1a1c20;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 15px;
+    background-color: #1a1c20;
+  }
+  &__right {
+    background-color: #2b2d33;
+    width: 300px;
+    position: relative;
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 7px;
+    background-color: #33363d;
+    img {
+      width: 100%;
     }
-    &__right {
-        background-color: #2b2d33;
+  }
+  &__top {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  &__channels {
+    padding: 13px;
+    &-header {
+      display: flex;
+      color: #fff;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
     }
-    &__icon {
-        width: 60px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        margin-top: 7px;
-        background-color: #33363d;
-        img {
-            width: 100%;
-        }
+  }
+  &__header {
+    display: flex;
+  }
+  &__add {
+    cursor: pointer;
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 10px 0;
+    border-top: 1px solid #686a6e;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__account {
+    display: flex;
+    align-items: center;
+    img {
+      width: 60px;
+      border-radius: 50%;
     }
+    &-name {
+      margin-left: 5px;
+
+      h4 {
+        color: #fff;
+      }
+
+      span {
+        color: #686a6e;
+      }
+    }
+  }
+  &__voice {
+    display: flex;
+    align-items: center;
+    color: #686a6e;
+  }
 }
