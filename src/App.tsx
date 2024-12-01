@@ -1,11 +1,12 @@
 import './App.scss'
+import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1>Discord</h1>
+      <div className='App'>
+        <Sidebar />
       </div>
     </>
   )
