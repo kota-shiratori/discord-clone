@@ -25,6 +25,7 @@
     background-color: #33363d;
     img {
       width: 100%;
+      border-radius: 50%;
     }
   }
   &__top {
@@ -69,6 +70,7 @@
     img {
       width: 60px;
       border-radius: 50%;
+      cursor: pointer;
     }
     &-name {
       margin-left: 5px;
