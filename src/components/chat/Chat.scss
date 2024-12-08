@@ -1,42 +1,44 @@
 .chat {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+  background-color: #33363d;
+
+  &__massage {
     flex-grow: 1;
-    background-color: #33363d;
+    overflow-y: scroll;
+  }
 
-    &__massage {
-        flex-grow: 1;
-    }
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #474b53;
+    border-radius: 5px;
+    margin: 20px;
+    color: lightgray;
 
-    &__input {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    form {
+      flex-grow: 1;
+      input {
         padding: 15px;
-        background-color: #474b53;
-        border-radius: 5px;
-        margin: 20px;
-        color: lightgray;
-
-        form {
-            flex-grow: 1;
-            input {
-                padding: 15px;
-                background: transparent;
-                border: none;
-                outline: none;
-                color: #fff;
-                font-size: large;
-                width: 100%;
-            }
-        }
-        &-button {
-            display: none;
-        }
-        &-icons {
-            .MuiSvgIcon-root {
-                padding: 5px;
-            }
-        }
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: large;
+        width: 100%;
+      }
     }
+    &-button {
+      display: none;
+    }
+    &-icons {
+      .MuiSvgIcon-root {
+        padding: 5px;
+      }
+    }
+  }
 }
